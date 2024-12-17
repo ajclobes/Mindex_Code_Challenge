@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mindex.challenge.service.impl.EmployeeServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-17T06:33:44" hostname="SPOONMAN" time="0.34">
+  <properties/>
+  <testcase name="testCreateReadUpdate" classname="com.mindex.challenge.service.impl.EmployeeServiceImplTest" time="0.34"/>
+  <system-out><![CDATA[2024-12-16T22:33:43.335-08:00  INFO 31304 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mindex.challenge.service.impl.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-16T22:33:43.350-08:00  INFO 31304 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mindex.challenge.ChallengeApplication for test class com.mindex.challenge.service.impl.EmployeeServiceImplTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-12-16T22:33:43.403-08:00  INFO 31304 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Starting EmployeeServiceImplTest using Java 17.0.13 with PID 31304 (started by Ajclo in C:\Users\Ajclo\Desktop\Code Assessment Mindex\mindex-code-challenge)
+2024-12-16T22:33:43.403-08:00 DEBUG 31304 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-16T22:33:43.403-08:00  INFO 31304 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : No active profile set, falling back to 1 default profile: "default"
+2024-12-16T22:33:43.578-08:00  INFO 31304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-16T22:33:43.585-08:00  INFO 31304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 MongoDB repository interface.
+2024-12-16T22:33:43.866-08:00  INFO 31304 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-12-16T22:33:43.882-08:00  INFO 31304 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-16T22:33:43.883-08:00  INFO 31304 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-16T22:33:43.978-08:00  INFO 31304 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-16T22:33:43.979-08:00  INFO 31304 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 571 ms
+2024-12-16T22:33:44.097-08:00  INFO 31304 --- [    Test worker] de.bwaldvogel.mongo.MongoServer          : started MongoServer(port: 57074, ssl: false)
+2024-12-16T22:33:44.101-08:00  INFO 31304 --- [    Test worker] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/BellSoft/17.0.13+12-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1de4bee0, com.mongodb.Jep395RecordCodecProvider@3ece79fe, com.mongodb.KotlinCodecProvider@3cc79c02]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[bnetcmsus-a.akamaihd.net:57074], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-16T22:33:44.102-08:00  INFO 31304 --- [-server-worker1] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x77a36595, L:/127.0.0.1:57074 - R:/127.0.0.1:57076] connected
+2024-12-16T22:33:44.102-08:00  INFO 31304 --- [-server-worker2] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0xec361328, L:/127.0.0.1:57074 - R:/127.0.0.1:57075] connected
+2024-12-16T22:33:44.106-08:00  INFO 31304 --- [maihd.net:57074] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=bnetcmsus-a.akamaihd.net:57074, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=4585000}
+2024-12-16T22:33:44.154-08:00  INFO 31304 --- [-server-worker3] d.b.mongo.wire.MongoWireProtocolHandler  : client [id: 0x04f75668, L:/127.0.0.1:57074 - R:/127.0.0.1:57077] connected
+2024-12-16T22:33:44.160-08:00  INFO 31304 --- [-server-worker3] d.b.mongo.backend.AbstractMongoBackend   : created database test
+2024-12-16T22:33:44.160-08:00  INFO 31304 --- [-server-worker3] d.b.mongo.backend.AbstractMongoDatabase  : adding unique _id index for collection employee
+2024-12-16T22:33:44.161-08:00  INFO 31304 --- [-server-worker3] d.b.mongo.backend.AbstractMongoDatabase  : created collection test.employee
+2024-12-16T22:33:44.312-08:00  INFO 31304 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 57078 (http) with context path ''
+2024-12-16T22:33:44.316-08:00  INFO 31304 --- [    Test worker] c.m.c.s.impl.EmployeeServiceImplTest     : Started EmployeeServiceImplTest in 0.963 seconds (process running for 7.116)
+2024-12-16T22:33:44.542-08:00  INFO 31304 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-16T22:33:44.543-08:00  INFO 31304 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-16T22:33:44.545-08:00  INFO 31304 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-16T22:33:44.612-08:00 DEBUG 31304 --- [o-auto-1-exec-1] c.m.c.controller.EmployeeController      : Received employee create request for [com.mindex.challenge.data.Employee@171390e]
+2024-12-16T22:33:44.613-08:00 DEBUG 31304 --- [o-auto-1-exec-1] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee [com.mindex.challenge.data.Employee@171390e]
+2024-12-16T22:33:44.644-08:00 DEBUG 31304 --- [o-auto-1-exec-2] c.m.c.controller.EmployeeController      : Received employee create request for id [86409385-612c-42ff-bbff-166520434b09]
+2024-12-16T22:33:44.644-08:00 DEBUG 31304 --- [o-auto-1-exec-2] c.m.c.service.impl.EmployeeServiceImpl   : Creating employee with id [86409385-612c-42ff-bbff-166520434b09]
+2024-12-16T22:33:44.652-08:00 DEBUG 31304 --- [o-auto-1-exec-3] c.m.c.controller.EmployeeController      : Received employee create request for id [86409385-612c-42ff-bbff-166520434b09] and employee [com.mindex.challenge.data.Employee@1b754e]
+2024-12-16T22:33:44.652-08:00 DEBUG 31304 --- [o-auto-1-exec-3] c.m.c.service.impl.EmployeeServiceImpl   : Updating employee [com.mindex.challenge.data.Employee@1b754e]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
